@@ -1,0 +1,9 @@
+#Using input() function take one number from user and using ternary operator check whether the number is even or odd
+
+#Take the input number from the user
+num = int(input("Enter a number:"))
+
+#Use ternary operator to check the number is even or odd
+result = " is Even" if (num % 2 ==0) else " is odd"
+
+print(f"{num}{result}")

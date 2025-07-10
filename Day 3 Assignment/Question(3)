@@ -1,0 +1,10 @@
+#Write a program to convert kilometers to miles
+
+#Take distance from user in km.
+kilometers = float(input("Enter the distance in kilometers:"))
+
+#Convert kilometers to miles
+miles = kilometers * 0.621371
+
+#display distance in miles
+print(f"{kilometers} km. is equal to {miles} miles.")

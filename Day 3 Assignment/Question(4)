@@ -1,0 +1,23 @@
+#Find the simple interest on Rs.200 for 5 years at 5% per year.
+
+#assign the given values
+principal = 200 
+rate = 5
+time = 5 #(in years)
+
+#calculate simple interest using the formula
+simple_int = (principal * rate * time)/100
+
+#print the simple interest
+print(f"The simple interest is: Rs.{simple_int}")
+
+
+'''By taking input from user=>'''
+#take the values of principal,time and rate from the user
+P = float(input("Enter the principal:"))
+R = float(input("Enter the rate:"))
+T = float(input("Enter the time:"))
+
+#Calculate the Simple interest
+SI = (P*R*T)/100
+print(f"The simple interest is Rs.{SI}")
