@@ -1,0 +1,41 @@
+#Write a python program to accept student name,roll no,marks of 5 subject and calculate percentage and grade.
+
+ #take details of student from user
+name = input("Enter student name: ")
+roll_no = input("Enter roll number: ")
+
+# Take marks for 5 subjects
+Sub1 = float(input("Enter marks for Subject 1: "))
+Sub2 = float(input("Enter marks for Subject 2: "))
+Sub3 = float(input("Enter marks for Subject 3: "))
+Sub4 = float(input("Enter marks for Subject 4: "))
+Sub5 = float(input("Enter marks for Subject 5: "))
+
+# Calculate total and percentage
+total_marks = Sub1 + Sub2 + Sub3 + Sub4 + Sub5
+percentage = total_marks / 5
+
+# Assign grade
+if percentage >= 90:
+    grade = "A+"
+elif percentage >= 80:
+    grade = "A"
+elif percentage >= 70:
+    grade = "B"
+elif percentage >= 60:
+    grade = "C"
+elif percentage >= 50:
+    grade = "D"
+elif percentage >=35:
+    grade = "E"
+else:
+    grade = "F"
+
+# Show result
+print("\n--- Result ---")
+print(f"Name of the student is {name}")
+print(f"Student roll no. is {roll_no}")
+print(f"Total Marks of roll number {roll_no} is {total_marks}")
+print(f"Roll no {roll_no} got {percentage}%")
+print(f"The grade for {percentage}% is {grade}")
+ 
